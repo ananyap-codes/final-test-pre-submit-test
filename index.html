@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            background-color: #007bff;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>Your journey to success starts here. Join us today!</p>
+        <button onclick="handleClick()">Get Started</button>
+    </div>
+    <script>
+        function handleClick() {
+            alert('Button clicked!');
+        }
+    </script>
+</body>
+</html>
